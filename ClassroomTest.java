@@ -18,5 +18,11 @@ public class ClassroomTest {
     }
 
 
+    @Test
+    public void classroomCanTakeStudents() {
+      classroom.add(student);
+      assertEquals(1, classroom.studentCount());
+    }
+
 
 }

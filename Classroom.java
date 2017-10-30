@@ -15,5 +15,9 @@ class Classroom {
     return count;
   }
 
+  public void add(Student student) {
+    int studentCount = studentCount();
+    students[studentCount] = student;
+  }
 
 }
