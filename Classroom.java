@@ -16,6 +16,9 @@ class Classroom {
   }
 
   public void add(Student student) {
+    if(isFull()) {
+      return;
+    }
     int studentCount = studentCount();
     students[studentCount] = student;
   }
