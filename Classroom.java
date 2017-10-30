@@ -20,4 +20,8 @@ class Classroom {
     students[studentCount] = student;
   }
 
+  public boolean isFull() {
+    return studentCount() == students.length;
+  }
+
 }

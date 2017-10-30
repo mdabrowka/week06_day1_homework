@@ -24,5 +24,13 @@ public class ClassroomTest {
       assertEquals(1, classroom.studentCount());
     }
 
+    @Test
+    public void classroomIsFull() {
+      for(int i =0; i < 20; i++) {
+        classroom.add(student);
+      }
+      assertEquals(true, classroom.isFull());
+    }
+
 
 }
